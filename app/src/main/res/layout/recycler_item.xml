@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/padding"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:src="@color/pic_color"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_width="@dimen/pic_size"
+        android:layout_height="@dimen/pic_size"
+        android:id="@+id/planet_pic"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/planet_pic"
+        android:layout_toEndOf="@+id/planet_pic"
+        android:layout_alignBottom="@+id/planet_pic"
+        android:layout_alignTop="@+id/planet_pic">
+
+        <TextView
+            android:textColor="@color/large_text_color"
+            android:textSize="@dimen/large_text"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Large Text"
+            android:id="@+id/planet_name"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:textColor="@color/small_text_color"
+            android:textSize="@dimen/small_text"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Small Text"
+            android:id="@+id/planet_diameter"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+</RelativeLayout>
