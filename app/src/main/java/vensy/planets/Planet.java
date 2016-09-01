@@ -5,15 +5,16 @@ package vensy.planets;
  */
 public class Planet {
     int pic;
-    String name, d, dist;
+    String name, d, dist, period;
 
     public Planet() {}
 
-    public Planet(int pic, String name, String d, String dist) {
+    public Planet(int pic, String name, String d, String dist, String period) {
         this.pic = pic;
         this.name = name;
         this.d = d;
         this.dist = dist;
+        this.period = period;
     }
 
     public int getPic() {
@@ -46,5 +47,13 @@ public class Planet {
 
     public void setDist(String dist) {
         this.dist = dist;
+    }
+
+    public String getPeriod() {
+        return period;
+    }
+
+    public void setPeriod(String period) {
+        this.period = period;
     }
 }

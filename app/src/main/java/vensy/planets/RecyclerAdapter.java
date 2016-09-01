@@ -18,13 +18,12 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         ImageView pic;
-        TextView name, d;
+        TextView name;
 
         public ViewHolder(View v) {
             super(v);
             pic = (ImageView) v.findViewById(R.id.planet_pic);
             name = (TextView) v.findViewById(R.id.planet_name);
-            d = (TextView) v.findViewById(R.id.planet_diameter);
             v.setOnClickListener(this);
             }
 
@@ -51,7 +50,6 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.pic.setImageResource(planets.get(position).getPic());
         holder.name.setText(planets.get(position).getName());
-        holder.d.setText(planets.get(position).getDiameter());
     }
 
     @Override

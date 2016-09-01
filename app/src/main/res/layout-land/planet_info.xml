@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding"
+    android:background="@color/background_color">
+
+
+    <ImageView
+        android:src="@color/pic_color"
+        android:layout_width="@dimen/pic_size"
+        android:layout_height="@dimen/pic_size"
+        android:id="@+id/pic"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/margin" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/pic"
+        android:layout_toEndOf="@id/pic"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin">
+
+        <TextView
+            android:textColor="@color/large_text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/name"
+            android:id="@+id/name"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:textColor="@color/small_text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/diam"
+            android:id="@+id/diameter"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:textColor="@color/small_text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/dist"
+            android:id="@+id/distance"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:textColor="@color/small_text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/period"
+            android:id="@+id/period"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</RelativeLayout>
